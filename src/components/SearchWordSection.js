@@ -1,6 +1,5 @@
 import React from 'react';
 import '../assets/searchSection.css';
-import searchWord from '../hooks/wordsApi';
 
 function SearchWordSection() {
     return (
