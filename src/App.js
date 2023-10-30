@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Header from './components/Header.js';
+import InputWordSection from './components/InputWordSection.js';
+import SearchWordSection from './components/SearchWordSection.js';
+import WordsDisplaySection from './components/WordsDisplaySection.js';
+import searchWord from './hooks/wordsApi';
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Header />
       </header>
+      <main>
+        <div className="Panel-section">
+          <InputWordSection />
+          <SearchWordSection />
+        </div>
+        <WordsDisplaySection />
+      </main>
     </div>
   );
 }

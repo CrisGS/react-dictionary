@@ -1,0 +1,22 @@
+.inputBox {
+    border-radius: 5px;
+    background: transparent;
+    color: azure;
+}
+
+.Input-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 15px;
+    font-weight: bold;
+    background: transparent;
+    color: #fff;
+    text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
+    box-shadow: 1.5px -1.5px 28px 7px rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur( 2.5px );
+    -webkit-backdrop-filter: blur( 2.5px );
+    border: none;
+}
