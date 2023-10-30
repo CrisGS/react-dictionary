@@ -3,7 +3,7 @@ import Header from './components/Header.js';
 import InputWordSection from './components/InputWordSection.js';
 import SearchWordSection from './components/SearchWordSection.js';
 import WordsDisplaySection from './components/WordsDisplaySection.js';
-import searchWord from './hooks/wordsApi';
+
 function App() {
   return (
     <div className="App">
