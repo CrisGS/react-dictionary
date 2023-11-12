@@ -4,7 +4,7 @@ import '../assets/searchSection.css';
 
 function SearchWordSection() {
     const [searchedWord, setSearchedWord] = useState('');
-    const [searchResult, setSearchResult] = useState(null); // New state for search result
+    const [searchResult, setSearchResult] = useState(null);
 
     async function searchWord(searchedWord) {
         const url = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchedWord}`;
@@ -24,11 +24,9 @@ function SearchWordSection() {
             if (response) {
                 setSearchResult(response);
             } else {
-                // Cuvântul nu a fost găsit, puteți trata acest caz aici
-                setSearchResult(null); // Clear previous search result on failure
+                setSearchResult(null);
             }
         } catch (error) {
-            // Tratați erorile aici
             console.error("Error:", error);
         }
     };
@@ -48,7 +46,6 @@ function SearchWordSection() {
                 <button onClick={handleSearch}>Search</button>
             </fieldset>
             
-            {/* Render WordsDisplaySection conditionally based on searchResult */}
             {searchResult && <WordsDisplaySection searchResult={searchResult} />}
         </section>
     );
