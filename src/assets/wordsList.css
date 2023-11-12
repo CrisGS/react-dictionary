@@ -15,5 +15,6 @@
   -webkit-backdrop-filter: blur( 2.5px );
   border: none;
   border-radius: 15px;
+  list-style: none;
 }
 
