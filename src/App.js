@@ -1,10 +1,11 @@
+import React, { useState } from 'react';
 import './App.css';
-import Header from './components/Header.js';
-import InputWordSection from './components/InputWordSection.js';
-import SearchWordSection from './components/SearchWordSection.js';
-import WordsDisplaySection from './components/WordsDisplaySection.js';
+import Header from './components/Header.jsx';
+import SearchWordSection from './components/SearchWordSection.jsx';
 
 function App() {
+  const [setWordData] = useState(null);
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,10 +13,8 @@ function App() {
       </header>
       <main>
         <div className="Panel-section">
-          <InputWordSection />
-          <SearchWordSection />
+          <SearchWordSection setWordData={setWordData} />
         </div>
-        <WordsDisplaySection />
       </main>
     </div>
   );
