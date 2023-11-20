@@ -13,7 +13,6 @@ function SearchWordSection() {
             const word = await response.json();
             return word[0];
         } catch (error) {
-            console.error(error);
             throw error;
         }
     }
@@ -34,7 +33,6 @@ function SearchWordSection() {
     return (
         <section className="Search-section">
             <fieldset className="search-field">
-                <legend><strong>Search a word</strong></legend>
                 <input
                     className="searchInput"
                     type="text"
@@ -45,7 +43,6 @@ function SearchWordSection() {
                 />
                 <button onClick={handleSearch}>Search</button>
             </fieldset>
-            
             {searchResult && <WordsDisplaySection searchResult={searchResult} />}
         </section>
     );

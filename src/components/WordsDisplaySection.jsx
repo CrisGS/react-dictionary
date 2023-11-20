@@ -1,12 +1,12 @@
 import React from 'react';
 import '../assets/displaySection.css';
-import '../assets/wordsList.css';
+//import '../assets/wordsList.css';
 
 function WordsDisplaySection({ searchResult }) {
     console.log(searchResult);
     return (
         <section className="Display-section">
-            <ul className="Words-list">
+            <ul className="Words-list scrollable">
                 {searchResult && (
                     <li>
                         <h2>Word: {searchResult.word}</h2>

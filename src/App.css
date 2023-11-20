@@ -1,5 +1,4 @@
 body {
-  overflow: auto;
   height: 100vh;
   margin: 0;
 }
@@ -16,7 +15,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
-  overflow: auto;
+  overflow-y: hidden;
   margin: 0;
 }
 
@@ -27,14 +26,23 @@ body {
   align-items: center;
   flex-wrap: wrap;
   width: 80%;
-  height: 20%;
+  height: 10%;
   border-radius: 15px;
+  padding: 5px;
 }
 
 .App-header {
   display: flex;
   flex-direction: column;
   font-size: calc(10px + 2vmin);
+  height: fit-content;
+  padding: 10px;
+}
+
+.App-header > h1 {
+  text-align: center;
+  text-shadow: 1px 1px 2px #000, 0 0 1em #000, 0 0 0.2em #000;
+  margin: 0;
 }
 
 main {
